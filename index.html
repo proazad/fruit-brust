@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/253c203055.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Tailwindcss and DaisyUI Added Here  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -25,7 +30,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              fruit: "#F85559",
             },
           },
         },
@@ -33,11 +38,84 @@
     </script>
   </head>
   <body>
-    <h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-      necessitatibus labore. Adipisci eius dolor asperiores quisquam, aperiam
-      officiis, et soluta exercitationem repellendus velit consequatur iusto
-      voluptatem porro provident eaque magnam!
-    </h1>
+    <header class="container mx-auto">
+      <!-- Navbar Start Here  -->
+      <nav class="navbar lg:bg-[#F85559] lg:rounded-full mt-9 px-4 lg:px-6">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="index.html" class="text-white text-lg">Home</a></li>
+            <li><a href="#" class="text-white text-lg">About us</a></li>
+            <li><a href="#" class="text-white text-lg">Shop</a></li>
+            <li><a href="#" class="text-white text-lg">All Fruits</a></li>
+          </ul>
+        </div>
+        <!-- Small and Medium Device Navbar  -->
+        <div
+          class="w-full lg:w-auto navbar-center flex flex-row-reverse justify-between"
+        >
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars text-4xl"></i>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
+            </ul>
+          </div>
+          <!-- Website logo Area  -->
+          <div class="flex-start">
+            <a href="index.html" class="flex items-center space-x-2">
+              <img
+                src="./assets/images/logo.png"
+                class="w-11 inline"
+                alt="Site logo"
+                draggable="false"
+              />
+              <span class="normal-case text-4xl font-bold lg:text-white"
+                >Fruit Burst</span
+              >
+            </a>
+          </div>
+        </div>
+        <!-- Search Icon  Large Device Show -->
+        <div
+          class="relative navbar-end hidden lg:flex text-gray-600 focus-within:text-gray-400"
+        >
+          <form action="index.html" method="GET">
+            <span class="absolute inset-y-0 right-0 flex items-center pr-2">
+              <button
+                type="submit"
+                class="p-1 focus:outline-none focus:shadow-outline"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </button>
+            </span>
+            <input
+              type="search"
+              name="q"
+              class="w-auto pl-4 py-2 text-sm pr-10 rounded-full focus:outline-none"
+              placeholder="Search here"
+              autocomplete="on"
+            />
+          </form>
+        </div>
+      </nav>
+      <!-- Navbar End Here  -->
+    </header>
   </body>
 </html>
