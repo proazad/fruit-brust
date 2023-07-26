@@ -47,13 +47,6 @@
       .count-sperator {
         position: relative;
       }
-      /* .count-sperator::after {
-        position: absolute;
-        content: "<i class=" fa-solid fa-ellipsis-vertical "></i>";
-        right: -20px;
-        top: 20%;
-        font-size: 40px;
-      } */
     </style>
   </head>
   <body class="font-lato">
@@ -408,11 +401,12 @@
     <main class="container mx-auto">
       <!-- Deal of Tha Day Section Area Start Here  -->
       <section class="lg:my-28 lg:pt-20 px-4 lg:px-0">
+        <!-- Deal of the day Count Down Container  -->
         <div
           class="w-full md:w-1/2 mx-auto lg:w-full flex flex-col lg:flex-row justify-between items-center gap-7 lg:gap-44"
         >
-          <div class="flex-1 space-y-4 text-center">
-            <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+          <div class="flex-1 space-y-4 text-center lg:text-left">
+            <h2 class="text-4xl md:text-5xl font-extrabold">Deal of the day</h2>
             <p class="text-base text-gray-500">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
@@ -420,10 +414,10 @@
             </p>
           </div>
           <div class="flex-1">
-            <div class="flex justify-evenly items-center gap-5">
+            <div class="flex justify-evenly items-center gap-3 md:gap-5">
               <!-- Days  -->
               <div class="flex flex-col text-center space-y-2 count-sperator">
-                <span class="text-5xl font-extrabold">
+                <span class="text-4xl lg:text-5xl font-extrabold">
                   <span id="days"></span>
                 </span>
                 <span class="text-base font-semibold text-gray-600">Days</span>
@@ -433,7 +427,7 @@
               </div>
               <!-- Hours  -->
               <div class="flex flex-col text-center space-y-2">
-                <span class="text-5xl font-extrabold">
+                <span class="text-4xl lg:text-5xl font-extrabold">
                   <span id="hours"></span>
                 </span>
                 <span class="text-base font-semibold text-gray-600">Hours</span>
@@ -443,7 +437,7 @@
               </div>
               <!-- Minutes  -->
               <div class="flex flex-col text-center space-y-2">
-                <span class="text-5xl font-extrabold">
+                <span class="text-4xl lg:text-5xl font-extrabold">
                   <span id="minutes"></span>
                 </span>
                 <span class="text-base font-semibold text-gray-600"
@@ -455,12 +449,195 @@
               </div>
               <!-- Seconds  -->
               <div class="flex flex-col text-center space-y-2">
-                <span class="text-5xl font-extrabold">
+                <span class="text-4xl lg:text-5xl font-extrabold">
                   <span id="seconds"></span>
                 </span>
                 <span class="text-base font-semibold text-gray-600"
                   >Seconds</span
                 >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Deal of The Day Product Container  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-20">
+          <!-- First Deals  -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./assets/images/fruit6.png" alt="Apple" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apples</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="" onclick="my_modal_5.showModal()">
+                open modal
+              </button>
+              <dialog
+                id="my_modal_5"
+                class="modal modal-bottom sm:modal-middle"
+              >
+                <form method="dialog" class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">
+                    Press ESC key or click the button below to close
+                  </p>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+          <!-- Second Deals  -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./assets/images/fruit6.png" alt="Apple" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apples</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Third Deals  -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./assets/images/fruit6.png" alt="Apple" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apples</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth Deals  -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./assets/images/fruit6.png" alt="Apple" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apples</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
               </div>
             </div>
           </div>
