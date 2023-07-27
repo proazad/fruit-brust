@@ -24,18 +24,6 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind CSS Class Extend   -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              fruit: "#F85559",
-            },
-          },
-        },
-      };
-    </script>
     <style>
       .font-lato {
         font-family: "Lato", sans-serif;
@@ -47,9 +35,13 @@
       .count-sperator {
         position: relative;
       }
+      .team-bg-color {
+        background-color: rgba(0, 0, 0, 0.587);
+        background-blend-mode: overlay;
+      }
     </style>
   </head>
-  <body class="font-lato">
+  <body class="font-lato bg-fruit">
     <!-- Header Area Part Start Here  -->
     <header class="container mx-auto">
       <!-- Navbar Start Here  -->
@@ -460,7 +452,10 @@
             </div>
           </div>
         </div>
-        <!-- Deal of The Day Product Container  -->
+        <!-- 
+          => Deal of the day Count Down Container End Here
+          => Deal of The Day Product Container Start Here 
+        -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-20">
           <!-- First Deals  -->
           <div class="card bg-base-100 shadow-sm border">
@@ -580,7 +575,10 @@
               </div>
             </div>
           </div>
-          <!-- Second Deals  -->
+          <!-- 
+            => First Deals End Here 
+            => Second Deals Start Here 
+           -->
           <div class="card bg-base-100 shadow-sm border">
             <figure class="px-10 pt-10">
               <img src="./assets/images/fruit7.png" alt="Apple" class="" />
@@ -698,7 +696,10 @@
               </div>
             </div>
           </div>
-          <!-- Third Deals  -->
+          <!-- 
+            => Second Deals End Here 
+            => Third Deals Start here 
+          -->
           <div class="card bg-base-100 shadow-sm border">
             <figure class="px-10 pt-10">
               <img
@@ -820,7 +821,10 @@
               </div>
             </div>
           </div>
-          <!-- Fourth Deals  -->
+          <!-- 
+            => Third Deals End here 
+            => Fourth Deals  Start Here 
+          -->
           <div class="card bg-base-100 shadow-sm border">
             <figure class="px-10 pt-10">
               <img src="./assets/images/fruit9.png" alt="Banana" class="" />
@@ -938,16 +942,215 @@
               </div>
             </div>
           </div>
+          <!-- 
+            => Fourth Deals  End Here 
+          -->
         </div>
+        <!-- 
+          => Sorry Sir For Change This Button Name. Beacuse i throught that here will a load more or Show more Button link. Please Forgive me if i make mistake.  
+          => Load More / Show More
+        -->
         <div class="text-center my-12">
           <button
             class="btn bg-[#F85559] text-white normal-case hover:text-black"
           >
-            Shop All
+            Show More
           </button>
         </div>
       </section>
-      <!-- Deal of Tha Day Section Area End Here  -->
+      <!-- 
+        => Deal of Tha Day Section Area End Here 
+        => Meet the Team Section Start Here 
+      -->
+      <section
+        class="container h-auto mx-auto team-bg-color rounded-xl p-4 md:p-24 bg-[url(./assets/images/team.png)] bg-no-repeat bg-cover bg-center"
+      >
+        <!-- Team Section Header Content Start here  -->
+        <div class="w-full md:w-3/4 mx-auto space-y-5 text-center">
+          <h2 class="text-3xl md:text-5xl text-white font-extrabold">
+            Meet Our Fantastic Team
+          </h2>
+          <p class="text-base font-medium text-white">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+        <!-- 
+          => Team Section Header Content End Here 
+          => Team Section Team Member Card Area Start here 
+        -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Team Member Number 01 #Mr. Awlad Hossain -->
+          <div class="card">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/member1.png"
+                alt="Awlad Hossain"
+                class="border-4 p-1 border-[#F85559] rounded-full transition-all duration-300 hover:border-white"
+              />
+            </figure>
+            <!-- Team Infomation Start here  -->
+            <div class="card-body items-center text-center space-y-2">
+              <h2 class="text-2xl text-white font-bold">Awlad Hossain</h2>
+              <p class="text-base text-white font-normal">Fruits Expert</p>
+              <!-- Team Social Media Start Here -->
+              <div class="flex text-white space-x-5">
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </p>
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://twitter.com/" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </p>
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://linkedin.com/" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </p>
+              </div>
+              <!-- Team Social Media End Here -->
+            </div>
+            <!-- Team Infomation End here  -->
+          </div>
+          <!-- Team Member Number 02 #Mrs. Safia Chowdhury  -->
+          <div class="card">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/member2.png"
+                alt="Safia Chowdhury"
+                class="border-4 p-1 border-[#F85559] rounded-full transition-all duration-300 hover:border-white"
+              />
+            </figure>
+            <!-- Team Infomation Start here  -->
+            <div class="card-body items-center text-center space-y-2">
+              <h2 class="text-2xl text-white font-bold">Safia Chowdhury</h2>
+              <p class="text-base text-white font-normal">Head of Marketing</p>
+              <!-- Team Social Media Start Here -->
+              <div class="flex text-white space-x-5">
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </p>
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://twitter.com/" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </p>
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://linkedin.com/" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </p>
+              </div>
+              <!-- Team Social Media End Here -->
+            </div>
+            <!-- Team Infomation End here  -->
+          </div>
+          <!-- Team Member Number 03 #Mr. Rokib Hossain  -->
+          <div class="card">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/member3.png"
+                alt="Rokib Hossain"
+                class="border-4 p-1 border-[#F85559] rounded-full transition-all duration-300 hover:border-white"
+              />
+            </figure>
+            <!-- Team Infomation Start here  -->
+            <div class="card-body items-center text-center space-y-2">
+              <h2 class="text-2xl text-white font-bold">Rokib Hossain</h2>
+              <p class="text-base text-white font-normal">Head of Operations</p>
+              <!-- Team Social Media Start Here -->
+              <div class="flex text-white space-x-5">
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </p>
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://twitter.com/" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </p>
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://linkedin.com/" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </p>
+              </div>
+              <!-- Team Social Media End Here -->
+            </div>
+            <!-- Team Infomation End here  -->
+          </div>
+          <!-- Team Member Number 04 #Mrs. Chaity  -->
+          <div class="card">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/member4.png"
+                alt="Chaity"
+                class="border-4 p-1 border-[#F85559] rounded-full transition-all duration-300 hover:border-white"
+              />
+            </figure>
+            <!-- Team Infomation Start here  -->
+            <div class="card-body items-center text-center space-y-2">
+              <h2 class="text-2xl text-white font-bold">Chaity</h2>
+              <p class="text-base text-white font-normal">HR Admin</p>
+              <!-- Team Social Media Start Here -->
+              <div class="flex text-white space-x-5">
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </p>
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://twitter.com/" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </p>
+                <p
+                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                >
+                  <a href="https://linkedin.com/" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </p>
+              </div>
+              <!-- Team Social Media End Here -->
+            </div>
+            <!-- Team Infomation End here  -->
+          </div>
+        </div>
+        <!-- 
+          => Team Section Team Member Card Area End here 
+        -->
+      </section>
+      <!-- Meet the Team Section End Here  -->
     </main>
     <!-- Main Content Area End Here  -->
     <script src="./assets/countdown.js"></script>
