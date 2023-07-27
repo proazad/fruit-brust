@@ -39,6 +39,18 @@
         background-color: rgba(0, 0, 0, 0.587);
         background-blend-mode: overlay;
       }
+      .before-border {
+        position: relative;
+      }
+      .before-border::before {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: rgba(222, 219, 219, 0.671);
+        bottom: -10px;
+        left: 0;
+      }
     </style>
   </head>
   <body class="font-lato bg-fruit">
@@ -963,7 +975,7 @@
         => Meet the Team Section Start Here 
       -->
       <section
-        class="container h-auto mx-auto team-bg-color rounded-xl p-4 md:p-24 bg-[url(./assets/images/team.png)] bg-no-repeat bg-cover bg-center"
+        class="h-auto team-bg-color rounded-xl p-4 md:p-24 bg-[url(./assets/images/team.png)] bg-no-repeat bg-cover bg-center"
       >
         <!-- Team Section Header Content Start here  -->
         <div class="w-full md:w-3/4 mx-auto space-y-5 text-center">
@@ -1150,9 +1162,207 @@
           => Team Section Team Member Card Area End here 
         -->
       </section>
-      <!-- Meet the Team Section End Here  -->
+      <!-- 
+        => Meet the Team Section End Here
+        => Why Chose Us Section Start Here 
+      -->
+      <section class="my-20 px-4 lg:px-0">
+        <!-- Why Choose us Heading  Start Here  -->
+        <div class="w-full lg:w-1/2 mx-auto text-center space-y-3">
+          <h2 class="text-5xl font-extrabold">Why Choose Us</h2>
+          <p class="text-gray-500 text-base">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+        <!-- 
+          => Why Choose us Heading End here 
+          => Why Choose us Content Start Here 
+        -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-10">
+          <!-- Why Choose Content Middle Image  -->
+          <div class="lg:order-2 mx-auto">
+            <img
+              src="./assets/images/whychoose1.png"
+              alt=""
+              class="max-w-full"
+            />
+          </div>
+          <!-- Why Choose use Left Side Content  -->
+          <div class="lg:order-1 space-y-5">
+            <!-- Items 01  -->
+            <div class="flex lg:text-left items-start gap-5">
+              <div class="">
+                <div
+                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                >
+                  <i class="fa-solid fa-users"></i>
+                </div>
+              </div>
+              <div class="space-y-5">
+                <h2 class="text-2xl font-bold before-border">Dedicated Team</h2>
+                <p class="text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- Items 02  -->
+            <div class="flex items-start gap-5">
+              <div>
+                <div
+                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="space-y-5">
+                <h2 class="text-2xl font-bold before-border">Fresh is Best</h2>
+                <p class="text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- Items 03  -->
+            <div class="flex items-start gap-5">
+              <div>
+                <div
+                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                >
+                  <i class="fa-solid fa-gift"></i>
+                </div>
+              </div>
+              <div class="space-y-5">
+                <h2 class="text-2xl font-bold before-border">
+                  Gift Certificates
+                </h2>
+                <p class="text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Why Choose use Right Side Content  -->
+          <div class="lg:order-3 space-y-5">
+            <!-- Items 01  -->
+            <div class="flex lg:text-left items-start gap-5">
+              <div class="">
+                <div
+                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                >
+                  <i class="fa-solid fa-users"></i>
+                </div>
+              </div>
+              <div class="space-y-5">
+                <h2 class="text-2xl font-bold before-border">
+                  Integrated Supplier
+                </h2>
+                <p class="text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- Items 02  -->
+            <div class="flex items-start gap-5">
+              <div>
+                <div
+                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="space-y-5">
+                <h2 class="text-2xl font-bold before-border">
+                  Sustainable Practice
+                </h2>
+                <p class="text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- Items 03  -->
+            <div class="flex items-start gap-5">
+              <div>
+                <div
+                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                >
+                  <i class="fa-solid fa-gift"></i>
+                </div>
+              </div>
+              <div class="space-y-5">
+                <h2 class="text-2xl font-bold before-border">
+                  The Benefits Only
+                </h2>
+                <p class="text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Why Choose us Content End Here  -->
+      </section>
+      <!-- Why Choose us Section End Here -->
     </main>
     <!-- Main Content Area End Here  -->
+    <!-- Footer Section Start Here  -->
+    <footer class="py-10 px-4 bg-[#121212] text-neutral-content">
+      <!-- Footer Logo  -->
+      <div class="w-full lg:w-1/2 mx-auto flex justify-center">
+        <a href="index.html" class="flex items-center space-x-2">
+          <img
+            src="./assets/images/logo.png"
+            class="w-11 inline"
+            alt="Site logo"
+            draggable="false"
+          />
+          <span class="normal-case text-4xl font-bold lg:text-white"
+            >Fruit Brust</span
+          >
+        </a>
+      </div>
+      <!-- Footer navbar  -->
+      <div class="w-full md:w-1/2 mx-auto">
+        <ul class="menu menu-horizontal justify-center items-center px-1">
+          <li><a href="index.html" class="text-white text-lg">Home</a></li>
+          <li><a href="#" class="text-white text-lg">About us</a></li>
+          <li><a href="#" class="text-white text-lg">Shop</a></li>
+          <li><a href="#" class="text-white text-lg">All Fruits</a></li>
+          <li><a href="#" class="text-white text-lg">Support</a></li>
+          <li><a href="#" class="text-white text-lg">My Account</a></li>
+        </ul>
+      </div>
+      <!-- Footer Social  -->
+      <div class="w-1/2 mx-auto flex justify-center text-white space-x-5 my-10">
+        <a href="https://facebook.com/" class="text-2xl" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://twitter.com/" class="text-2xl" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+
+        <a href="https://linkedin.com/" class="text-2xl" target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://instagram.com/" class="text-2xl"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://apple.com/" class="text-2xl"
+          ><i class="fa-brands fa-apple"></i
+        ></a>
+        <a href="https://youtube.com/" class="text-2xl"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+    </footer>
     <script src="./assets/countdown.js"></script>
   </body>
 </html>
