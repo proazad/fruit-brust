@@ -50,17 +50,41 @@
         background-color: rgba(0, 0, 0, 0.587);
         background-blend-mode: overlay;
       }
-      .before-border {
+
+      .before-border,
+      .before-border-right {
         position: relative;
+        padding: 15px 0px;
       }
       .before-border::before {
         position: absolute;
         content: "";
         width: 50%;
         height: 1px;
-        background-color: rgba(222, 219, 219, 0.671);
+        background-color: rgba(103, 103, 103, 0.671);
         bottom: -10px;
         left: 0;
+      }
+      .before-border-right::before {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: rgba(95, 94, 94, 0.671);
+        bottom: -10px;
+        right: 0;
+      }
+      @media screen and (max-width: 768px) {
+        .before-border,
+        .before-border-right {
+          padding: 15px 0px;
+        }
+        .before-border::before {
+          left: 25%;
+        }
+        .before-border-right::before {
+          right: 25%;
+        }
       }
     </style>
   </head>
@@ -1236,21 +1260,26 @@
               src="./assets/images/whychoose1.png"
               alt=""
               class="max-w-full"
+              draggable="false"
             />
           </div>
           <!-- Why Choose use Left Side Content  -->
-          <div class="lg:order-1 space-y-5">
+          <div class="lg:order-1 space-y-10 lg:space-y-5">
             <!-- Items 01  -->
-            <div class="flex lg:text-left items-start gap-5">
-              <div class="">
+            <div
+              class="flex flex-col lg:flex-row text-center lg:text-left items-start gap-5"
+            >
+              <div class="w-full lg:w-auto text-center flex justify-center">
                 <div
-                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                  class="w-[70px] lg:w-[50px] h-[70px] lg:h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-fruits"
                 >
-                  <i class="fa-solid fa-users"></i>
+                  <i class="fa-solid fa-users text-3xl lg:text-xl"></i>
                 </div>
               </div>
-              <div class="space-y-5">
-                <h2 class="text-2xl font-bold before-border">Dedicated Team</h2>
+              <div class="w-full lg:w-auto space-y-5">
+                <h2 class="text-2xl text-black font-bold before-border">
+                  Dedicated Team
+                </h2>
                 <p class="text-base">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -1258,16 +1287,20 @@
               </div>
             </div>
             <!-- Items 02  -->
-            <div class="flex items-start gap-5">
-              <div>
+            <div
+              class="flex flex-col lg:flex-row text-center lg:text-left items-start gap-5"
+            >
+              <div class="w-full lg:w-auto text-center flex justify-center">
                 <div
-                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                  class="w-[70px] lg:w-[50px] h-[70px] lg:h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-fruits"
                 >
-                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart text-3xl lg:text-xl"></i>
                 </div>
               </div>
-              <div class="space-y-5">
-                <h2 class="text-2xl font-bold before-border">Fresh is Best</h2>
+              <div class="w-full lg:w-auto space-y-5">
+                <h2 class="text-2xl text-black font-bold before-border">
+                  Fresh is Best
+                </h2>
                 <p class="text-base">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -1275,16 +1308,18 @@
               </div>
             </div>
             <!-- Items 03  -->
-            <div class="flex items-start gap-5">
-              <div>
+            <div
+              class="flex flex-col lg:flex-row text-center lg:text-left items-start gap-5"
+            >
+              <div class="w-full lg:w-auto text-center flex justify-center">
                 <div
-                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                  class="w-[70px] lg:w-[50px] h-[70px] lg:h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-fruits"
                 >
-                  <i class="fa-solid fa-gift"></i>
+                  <i class="fa-solid fa-gift text-3xl lg:text-xl"></i>
                 </div>
               </div>
-              <div class="space-y-5">
-                <h2 class="text-2xl font-bold before-border">
+              <div class="w-full lg:w-auto space-y-5">
+                <h2 class="text-2xl text-black font-bold before-border">
                   Gift Certificates
                 </h2>
                 <p class="text-base">
@@ -1296,59 +1331,75 @@
           </div>
 
           <!-- Why Choose use Right Side Content  -->
-          <div class="lg:order-3 space-y-5">
+          <div class="lg:order-3 space-y-10 lg:space-y-5">
             <!-- Items 01  -->
-            <div class="flex lg:text-left items-start gap-5">
-              <div class="">
+            <div
+              class="flex flex-col lg:flex-row-reverse text-center lg:text-left items-start gap-5"
+            >
+              <div class="w-full lg:w-auto text-center flex justify-center">
                 <div
-                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                  class="w-[70px] lg:w-[50px] h-[70px] lg:h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-fruits"
                 >
-                  <i class="fa-solid fa-users"></i>
+                  <i class="fa-solid fa-truck-field text-3xl lg:text-xl"></i>
                 </div>
               </div>
-              <div class="space-y-5">
-                <h2 class="text-2xl font-bold before-border">
+              <div class="w-full lg:w-auto space-y-5">
+                <h2
+                  class="text-2xl text-black lg:text-right font-bold before-border-right"
+                >
                   Integrated Supplier
                 </h2>
-                <p class="text-base">
+                <p class="text-base lg:text-right">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- Items 02  -->
-            <div class="flex items-start gap-5">
-              <div>
+            <div
+              class="flex flex-col lg:flex-row-reverse text-center lg:text-left items-start gap-5"
+            >
+              <div class="w-full lg:w-auto text-center flex justify-center">
                 <div
-                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                  class="w-[70px] lg:w-[50px] h-[70px] lg:h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-fruits"
                 >
-                  <i class="fa-regular fa-heart"></i>
+                  <i
+                    class="fa-solid fa-building-shield text-3xl lg:text-xl"
+                  ></i>
                 </div>
               </div>
-              <div class="space-y-5">
-                <h2 class="text-2xl font-bold before-border">
+              <div class="w-full lg:w-auto space-y-5">
+                <h2
+                  class="text-2xl text-black lg:text-right font-bold before-border-right"
+                >
                   Sustainable Practice
                 </h2>
-                <p class="text-base">
+                <p class="text-base lg:text-right">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- Items 03  -->
-            <div class="flex items-start gap-5">
-              <div>
+            <div
+              class="flex flex-col lg:flex-row-reverse text-center lg:text-left items-start gap-5"
+            >
+              <div class="w-full lg:w-auto text-center flex justify-center">
                 <div
-                  class="w-[50px] h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-[#F85559]"
+                  class="w-[70px] lg:w-[50px] h-[70px] lg:h-[50px] flex transition-all delay-400 justify-center items-center rounded-full bg-gray-400 text-white hover:bg-fruits"
                 >
-                  <i class="fa-solid fa-gift"></i>
+                  <i
+                    class="fa-solid fa-money-bill-trend-up text-3xl lg:text-xl"
+                  ></i>
                 </div>
               </div>
-              <div class="space-y-5">
-                <h2 class="text-2xl font-bold before-border">
+              <div class="w-full lg:w-auto space-y-5">
+                <h2
+                  class="text-2xl text-black lg:text-right font-bold before-border-right"
+                >
                   The Benefits Only
                 </h2>
-                <p class="text-base">
+                <p class="text-base lg:text-right">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
