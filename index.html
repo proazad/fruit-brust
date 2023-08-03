@@ -24,6 +24,17 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fruits: "#F85559",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .font-lato {
         font-family: "Lato", sans-serif;
@@ -172,7 +183,11 @@
           <!-- Slider 01  -->
           <div id="slide1" class="carousel-item relative w-full">
             <!-- Slider Image  -->
-            <img src="./assets/images/banner1.png" class="w-full" />
+            <img
+              src="./assets/images/banner1.png"
+              class="w-full"
+              draggable="false"
+            />
             <!-- Slider Content  -->
             <div class="absolute w-full h-full slider-content-bg">
               <div
@@ -188,7 +203,7 @@
                 </p>
                 <a
                   href="#"
-                  class="btn btn-sm lg:btn-md normal-case text-base md:text-xl rounded-md bg-[#F85559] border-none text-white hover:text-black"
+                  class="btn btn-sm lg:btn-md normal-case text-base md:text-xl rounded-md bg-[#F85559] border-none text-white transition-all duration-300 ease-in hover:text-black"
                   >Shop Now</a
                 >
               </div>
@@ -199,12 +214,12 @@
             >
               <a
                 href="#slide4"
-                class="btn btn-sm md:btn-md btn-circle bg-[#F85559] text-white border-none hover:text-black"
+                class="btn btn-sm md:btn-md btn-circle bg-fruits text-white border-none transition-all duration-300 ease-in hover:text-black"
                 >❮</a
               >
               <a
                 href="#slide2"
-                class="btn btn-sm md:btn-md btn-circle bg-[#F85559] text-white border-none hover:text-black"
+                class="btn btn-sm md:btn-md btn-circle bg-fruits text-white border-none transition-all duration-300 ease-in hover:text-black"
                 >❯</a
               >
             </div>
@@ -213,7 +228,11 @@
           <!-- Slider 02  -->
           <div id="slide2" class="carousel-item relative w-full">
             <!-- Slider Image  -->
-            <img src="./assets/images/banner2.png" class="w-full" />
+            <img
+              src="./assets/images/banner2.png"
+              class="w-full"
+              draggable="false"
+            />
             <!-- Slider Content  -->
             <div class="absolute w-full h-full slider-content-bg">
               <div
@@ -229,7 +248,7 @@
                 </p>
                 <a
                   href="#"
-                  class="btn btn-sm lg:btn-md normal-case text-base md:text-xl rounded-md bg-[#F85559] border-none text-white hover:text-black"
+                  class="btn btn-sm lg:btn-md normal-case text-base md:text-xl rounded-md bg-fruits transition-all duration-300 ease-in border-none text-white hover:text-black"
                   >Shop Now</a
                 >
               </div>
@@ -253,7 +272,11 @@
           <!-- Slider 03  -->
           <div id="slide3" class="carousel-item relative w-full">
             <!-- Slider Image  -->
-            <img src="./assets/images/banner3.png" class="w-full" />
+            <img
+              src="./assets/images/banner3.png"
+              class="w-full"
+              draggable="false"
+            />
             <!-- Slider Content  -->
             <div class="absolute w-full h-full slider-content-bg">
               <div
@@ -293,7 +316,11 @@
           <!-- Slider 04  -->
           <div id="slide4" class="carousel-item relative w-full">
             <!-- Slider Image  -->
-            <img src="./assets/images/banner4.png" class="w-full" />
+            <img
+              src="./assets/images/banner4.png"
+              class="w-full"
+              draggable="false"
+            />
             <!-- Slider Content  -->
             <div class="absolute w-full h-full slider-content-bg">
               <div
@@ -775,7 +802,7 @@
                 </div>
                 <!-- Open the modal using ID.showModal() method -->
                 <button
-                  class="text-[#F85559] text-lg font-semibold"
+                  class="text-fruits text-lg font-semibold"
                   onclick="my_modal_3.showModal()"
                 >
                   Details
@@ -838,13 +865,11 @@
                     <div class="modal-action justify-center space-x-5">
                       <!-- if there is a button in form, it will close the modal -->
                       <button
-                        class="btn text-[#F85559] font-semibold outline outline-[#F85559]"
+                        class="btn text-fruits font-semibold outline outline-fruits"
                       >
                         Close
                       </button>
-                      <button
-                        class="btn bg-[#F85559] text-white hover:text-black"
-                      >
+                      <button class="btn bg-fruits text-white hover:text-black">
                         Buy Now
                       </button>
                     </div>
@@ -902,7 +927,7 @@
                 </div>
                 <!-- Open the modal using ID.showModal() method -->
                 <button
-                  class="text-[#F85559] text-lg font-semibold"
+                  class="text-fruits text-lg font-semibold"
                   onclick="my_modal_4.showModal()"
                 >
                   Details
@@ -965,13 +990,11 @@
                     <div class="modal-action justify-center space-x-5">
                       <!-- if there is a button in form, it will close the modal -->
                       <button
-                        class="btn text-[#F85559] font-semibold outline outline-[#F85559]"
+                        class="btn text-fruits font-semibold outline outline-fruits"
                       >
                         Close
                       </button>
-                      <button
-                        class="btn bg-[#F85559] text-white hover:text-black"
-                      >
+                      <button class="btn bg-fruits text-white hover:text-black">
                         Buy Now
                       </button>
                     </div>
@@ -990,7 +1013,7 @@
         -->
         <div class="text-center my-12">
           <button
-            class="btn bg-[#F85559] text-white normal-case hover:text-black"
+            class="btn bg-fruits text-white normal-case transition-all duration-300 ease-in hover:text-black"
           >
             Show More
           </button>
@@ -1025,7 +1048,7 @@
               <img
                 src="./assets/images/member1.png"
                 alt="Awlad Hossain"
-                class="border-4 p-1 border-[#F85559] rounded-full transition-all duration-300 hover:border-white"
+                class="border-4 p-1 border-fruits rounded-full transition-all duration-300 hover:border-white"
               />
             </figure>
             <!-- Team Infomation Start here  -->
@@ -1035,21 +1058,21 @@
               <!-- Team Social Media Start Here -->
               <div class="flex text-white space-x-5">
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://facebook.com/" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </p>
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://twitter.com/" target="_blank"
                     ><i class="fa-brands fa-twitter"></i
                   ></a>
                 </p>
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://linkedin.com/" target="_blank"
                     ><i class="fa-brands fa-linkedin-in"></i
@@ -1066,7 +1089,7 @@
               <img
                 src="./assets/images/member2.png"
                 alt="Safia Chowdhury"
-                class="border-4 p-1 border-[#F85559] rounded-full transition-all duration-300 hover:border-white"
+                class="border-4 p-1 border-fruits rounded-full transition-all duration-300 hover:border-white"
               />
             </figure>
             <!-- Team Infomation Start here  -->
@@ -1076,21 +1099,21 @@
               <!-- Team Social Media Start Here -->
               <div class="flex text-white space-x-5">
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://facebook.com/" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </p>
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://twitter.com/" target="_blank"
                     ><i class="fa-brands fa-twitter"></i
                   ></a>
                 </p>
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://linkedin.com/" target="_blank"
                     ><i class="fa-brands fa-linkedin-in"></i
@@ -1107,7 +1130,7 @@
               <img
                 src="./assets/images/member3.png"
                 alt="Rokib Hossain"
-                class="border-4 p-1 border-[#F85559] rounded-full transition-all duration-300 hover:border-white"
+                class="border-4 p-1 border-fruits rounded-full transition-all duration-300 hover:border-white"
               />
             </figure>
             <!-- Team Infomation Start here  -->
@@ -1117,21 +1140,21 @@
               <!-- Team Social Media Start Here -->
               <div class="flex text-white space-x-5">
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://facebook.com/" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </p>
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://twitter.com/" target="_blank"
                     ><i class="fa-brands fa-twitter"></i
                   ></a>
                 </p>
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://linkedin.com/" target="_blank"
                     ><i class="fa-brands fa-linkedin-in"></i
@@ -1148,7 +1171,7 @@
               <img
                 src="./assets/images/member4.png"
                 alt="Chaity"
-                class="border-4 p-1 border-[#F85559] rounded-full transition-all duration-300 hover:border-white"
+                class="border-4 p-1 border-fruits rounded-full transition-all duration-300 hover:border-white"
               />
             </figure>
             <!-- Team Infomation Start here  -->
@@ -1158,21 +1181,21 @@
               <!-- Team Social Media Start Here -->
               <div class="flex text-white space-x-5">
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://facebook.com/" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                 </p>
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://twitter.com/" target="_blank"
                     ><i class="fa-brands fa-twitter"></i
                   ></a>
                 </p>
                 <p
-                  class="rounded-full bg-[#F85559] transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
+                  class="rounded-full bg-fruits transition-all duration-500 hover:bg-white hover:text-black w-7 h-7 text-lg"
                 >
                   <a href="https://linkedin.com/" target="_blank"
                     ><i class="fa-brands fa-linkedin-in"></i
